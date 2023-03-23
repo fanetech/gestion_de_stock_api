@@ -9,6 +9,7 @@ import lombok.Data;
 @Entity
 @AllArgsConstructor
 @Table(name = "ventes")
-public class Ventes {
+public class Ventes extends AbstractEntity {
     
+    private String code;
 }

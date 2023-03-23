@@ -14,7 +14,7 @@ import lombok.Data;
 @Entity
 @Table(name = "client")
 @AllArgsConstructor
-public class Client extends AbstractEntity{
+public class Client extends AbstractEntity {
 
     @Column(name = "nom")
     private String name;
@@ -25,8 +25,8 @@ public class Client extends AbstractEntity{
     @Column(name = "photo")
     private String photo;
     
-    @Embedded
-    private String adresse;
+    // @Embedded
+    // private String adresse;
     
     @Column(name = "mail")
     private String mail;
@@ -34,6 +34,6 @@ public class Client extends AbstractEntity{
     @Column(name = "numTel")
     private String numTel;
 
-    @OneToMany(mappedBy = "client")
-    private List<CommandeClient> commandeClients;
+    // @OneToMany(mappedBy = "client")
+    // private List<CommandeClient> commandeClients;
 }

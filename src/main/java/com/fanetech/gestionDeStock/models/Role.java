@@ -9,6 +9,8 @@ import lombok.Data;
 @Entity
 @AllArgsConstructor
 @Table(name = "role")
-public class Role {
+public class Role extends AbstractEntity {
+
+    private String nom;
     
 }
