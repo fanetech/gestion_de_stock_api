@@ -8,9 +8,11 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 
 @Data
+@Builder
 @Entity
 @Table(name = "client")
 @AllArgsConstructor
@@ -25,8 +27,8 @@ public class Client extends AbstractEntity {
     @Column(name = "photo")
     private String photo;
     
-    // @Embedded
-    // private String adresse;
+    @Embedded
+    private Adresse adresse;
     
     @Column(name = "mail")
     private String mail;
@@ -34,6 +36,6 @@ public class Client extends AbstractEntity {
     @Column(name = "numTel")
     private String numTel;
 
-    // @OneToMany(mappedBy = "client")
-    // private List<CommandeClient> commandeClients;
+    @OneToMany(mappedBy = "client")
+    private List<CommandeClient> commandeClients;
 }
