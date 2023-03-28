@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Embeddable
 @EqualsAndHashCode
-public class Adresse extends AbstractEntity{
+public class Adresse {
     
     @Column(name = "adresse1")
     private String adresse1;

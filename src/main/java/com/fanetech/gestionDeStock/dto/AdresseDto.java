@@ -28,7 +28,6 @@ public class AdresseDto {
         }
 
         return AdresseDto.builder()
-                .id(adresse.getId())
                 .adresse1(adresse.getAdresse1())
                 .adresse2(adresse.getAdresse2())
                 .codePostale(adresse.getCodePostale())
@@ -43,7 +42,6 @@ public class AdresseDto {
         }
 
         Adresse adresse = new Adresse();
-        adresse.setId(adresseDto.getId());
         adresse.setAdresse1(adresseDto.getAdresse1());
         adresse.setAdresse2(adresseDto.getAdresse2());
         adresse.setCodePostale(adresseDto.getCodePostale());
