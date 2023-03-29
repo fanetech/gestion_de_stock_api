@@ -33,8 +33,8 @@ public class Utilisateur extends AbstractEntity {
     @Column(name = "motDePasse")
     private String motDePasse;
     
-    @ManyToOne
-    @JoinColumn(name = "idAdresse")
+    // @ManyToOne
+    // @JoinColumn(name = "idAdresse")
     private Adresse adresse;
     
     @Column(name = "photo")
